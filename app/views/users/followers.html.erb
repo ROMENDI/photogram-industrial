@@ -1,0 +1,6 @@
+<%= render "users/tabbed_interface" %><div class="list-group">
+<hr> 
+<% @user.followers.each do |follower| %> 
+    <%= link_to follower.username, user_path(follower.username), class: "list-group-item" %>
+<% end %> 
+</div>
